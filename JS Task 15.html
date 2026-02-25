@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .static {
+        position: static; /* Default behavior, not necessary to declare */
+        background-color: lightcoral;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 50px;
+        right: 20px;
+        border: 2px solid rgb(30, 27, 166);
+      }
+      .absolute {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  #sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f1c40f;
+    color: black;
+    border: 2px solid #000;
+  }
+
+  #h1{
+                border: 10px solid black;
+                width:200px;
+                height: 100px;
+                padding: 30px;
+                box-sizing: border-box;
+                background-color: blue;
+                color:white;
+                opacity:1;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="static">
+      This is a static position element. It follows the normal document flow.
+    </div>
+    <div class="relative">This is relative postion element.</div>
+    <h2 class="absolute">This is the first heading.</h2>
+    <p class="fixed">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere,
+      explicabo. Ut laborum facilis minus laboriosam repellat itaque rerum
+      sapiente tempora consequatur, cumque nemo, quod dicta vero optio commodi.
+      Pariatur, repellendus!
+    </p>
+    <div id="sticky">This is the last div in this page.</div>
+    <h1 id="h1"> Box sizing.</h1>
+
+
+  </body>
+</html>
